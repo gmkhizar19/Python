@@ -53,4 +53,4 @@ student = {
 }
 
 print(student.get("name"))
-print(student.get("age"))
+print(student.get("price"))
