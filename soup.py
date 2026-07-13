@@ -5,10 +5,10 @@ from bs4 import BeautifulSoup
 
 url = input("Enter: ")
 html = urllib.request.urlopen(url).read()
-soup = BeautifulSoup(html, "html parser")
+soup = BeautifulSoup(html, "html.parser")
 
 # retrive all of the anchor tags
 
 tag = soup('a')
 for tags in tag:
-    print(tag.get("href", None))
+    print(tags.get("href", None))
